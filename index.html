@@ -86,16 +86,53 @@
 
     <div class="project">
       <div class="project-title">📈 Monte Carlo Simulation for Healthcare Stocks</div>
-      <img src="histograms.png" alt="Monte Carlo Histograms" width="100%">
-      <img src="normalizedpricepaths.png" alt="Normalized Price Paths" width="100%">
-      <img src="sharperatio.png" alt="Sharpe Ratio" width="100%">
+      <p><strong>Distribution of Simulated Portfolio Returns</strong></p>
+      <figure>
+        <img src="histograms.png" alt="Logarithmic Returns Histograms" width="100%">
+        <figcaption style="font-size: 0.9rem; color: #555; text-align: center; margin-top: 5px;">
+          This section explores the benefits of using logarithmic returns in normalizing time series data for 
+          analyzing Abbott Laboratories (Abbott), Pfizer Inc. (Pfizer), and Johnson & Johnson (J&J) stocks.
+        </figcaption>
+      </figure>  
+      <p><strong>Normalized Price Paths of Healthcare Stocks</strong></p>
+      <figure>
+        <img src="normalizedpricepaths.png" alt="Logarithmic Returns Histograms" width="100%">
+        <figcaption style="font-size: 0.9rem; color: #555; text-align: center; margin-top: 5px;">
+          Each stock's daily adjusted closing prices were divided by the initial price to normalize the data. 
+          The normalized stock prices were plotted to visualize their performance relative to their initial values
+        </figcaption>
+      </figure>
+      <p><strong>Sharpe Ratio Distribution</strong></p>
+      <figure>
+        <img src="sharperatio.png" alt="Sharpe Ratio" width="100%">
+        <figcaption style="font-size: 0.9rem; color: #555; text-align: center; margin-top: 5px;">
+          Random weights are assigned to each stock in the portfolio, meaning random weights are initialized to 
+          distribute investment across the three stocks without any predetermined bias.
+          Normalizing Weights to Sum to 1.0. Weights are rebalanced to ensure they sum up to 1.0, representing a fully invested portfolio. 
+          Expected Portfolio Return and Volatility. Calculate the expected portfolio return based on the mean log returns and assigned 
+          weights as well as determining the expected volatility of the portfolio using the covariance matrix and assigned weights. 
+          The Sharpe ratio quantifies the portfolio's performance relative to its risk. A higher ratio indicates better risk-adjusted returns.
+        </figcaption>
+      </figure>
       <a href="final%20version%20MonteCarloProject.ipynb" target="_blank">View Jupyter Notebook</a>
     </div>
 
     <div class="project">
       <div class="project-title">🏠 VAR Model: Housing Starts & Unemployment</div>
-      <img src="timeseriesvariables.svg" alt="Time Series Variables" width="100%">
-      <img src="forecastsofseries.svg" alt="Forecasts of Series" width="100%">
+      <p><strong>Time Series Variables</strong></p>
+      <figure>
+        <img src="timeseriesvariables.svg" alt="Time Series Variables" width="100%">
+        <figcaption style="font-size: 0.9rem; color: #555; text-align: center; margin-top: 5px;">
+          Creating the VAR (Vector Auto-Regressive) Model 
+        </figcaption>
+      </figure>
+      <p><strong>Multivariate Series Forecast</strong></p>
+      <figure>
+        <img src="forecastsofseries.svg" alt="Forecasts of Series" width="100%">
+        <figcaption style="font-size: 0.9rem; color: #555; text-align: center; margin-top: 5px;">
+          Forecast COMP, STARTS, and UNEM 24 periods ahead with optimal lag order 2. 
+        </figcaption>
+      </figure>
       <a href="Temp.R.Econometrics1.R" target="_blank">View R script</a>
     </div>
 
