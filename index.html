@@ -1,15 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sebastian's Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Sebastian Santolalla | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 80px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 750px;
+      width: 90%;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    p.subtitle {
+      font-size: 1rem;
+      color: #777;
+      margin-bottom: 30px;
+    }
+
+    .project {
+      margin-bottom: 20px;
+    }
+
+    .project-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+
+    .project a {
+      text-decoration: none;
+      color: #007acc;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Finance & Econ Portfolio</h1>
-  <p>Projects:</p>
-  <ul>
-    <li><a href="CAPM%20PFE%20vs%20Market%20without%20returns.r">CAPM Model (Pfizer)</a></li>
-    <li><a href="final%20version%20MonteCarloProject.ipynb">Monte Carlo Simulation</a></li>
-    <li><a href="Temp.R.Econometrics1.R">VAR Housing Model</a></li>
-  </ul>
+  <div class="container">
+    <h1>Sebastian Santolalla</h1>
+    <p class="subtitle">Economics & Data Portfolio | Risk, Modeling, and Analytics</p>
+
+    <div class="project">
+      <div class="project-title">📊 CAPM Model: Pfizer vs. S&P 500</div>
+      <a href="CAPM%20PFE%20vs%20Market%20without%20returns.r" target="_blank">View R script</a>
+    </div>
+
+    <div class="project">
+      <div class="project-title">📈 Monte Carlo Simulation for Healthcare Stocks</div>
+      <a href="final%20version%20MonteCarloProject.ipynb" target="_blank">View Jupyter Notebook</a>
+    </div>
+
+    <div class="project">
+      <div class="project-title">🏠 VAR Model: Housing Starts & Unemployment</div>
+      <a href="Temp.R.Econometrics1.R" target="_blank">View R script</a>
+    </div>
+
+    <footer>
+      © 2024 Sebastian Santolalla • <a href="mailto:youremail@example.com">Contact</a>
+    </footer>
+  </div>
 </body>
 </html>
